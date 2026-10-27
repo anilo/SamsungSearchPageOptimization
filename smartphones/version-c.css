@@ -1,0 +1,177 @@
+/* Version C: header reduced to a thin line, filters hidden behind one "Filters" button, narrower and shorter cards. */
+
+/* Hide carousel, promo bars and the eligibility row. */
+.nv19-pd-category-main,
+.pd-g-product-promotion-bar,
+#gnb-promo-wrapper-da-blue,
+.pd21-top__epp-benefit {
+  display: none !important;
+}
+
+/* Remove the H1 block so it takes no vertical space. */
+.co77-text-block-home {
+  display: none !important;
+}
+
+/* Filters hidden by default. The toggle button is added by above-the-fold-c.html. */
+.pd21-filter {
+  display: none !important;
+}
+
+/* Open filters float over the cards as a panel, so the grid does not move. */
+.pd21-top {
+  position: relative !important;
+}
+
+/* Open filters are a dropdown anchored under the Filters button. */
+body.filters-open .pd21-filter {
+  display: block !important;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 560px !important;
+  max-width: calc(100% - 32px) !important;
+  z-index: 50 !important;
+  padding: 16px !important;
+  background: #fff !important;
+  border: 1px solid #ddd !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+body.filters-open .pd21-filter__selector-list {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+}
+
+body.filters-open .pd21-filter__selector-item-cta {
+  width: 100% !important;
+}
+
+.pd21-top__header,
+.pd21-filter__selector-list {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+/* The "Filters" title in the header is the toggle. It shows a chevron that flips when open. */
+.pd21-top__title {
+  cursor: pointer;
+}
+
+.pd21-top__title::after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 0 4px 10px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  vertical-align: middle;
+}
+
+body.filters-open .pd21-top__title::after {
+  margin: 4px 0 0 10px;
+  transform: rotate(-135deg);
+}
+
+/* Narrower card grid. */
+.pd21-product-card__list {
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+  padding-top: 6px !important;
+}
+
+/* Shorter cards. */
+.pd21-product-card__image {
+  height: 120px !important;
+}
+
+.pd21-product-card__title-wrap,
+.pd21-product-card__rating-wrap,
+.pd21-product-card__options,
+.pd21-product-card__price,
+.pd21-product-card__cta-wrap {
+  margin-bottom: 6px !important;
+}
+
+/* Remove the "Learn more" link from each card. */
+.pd21-product-card__cta-container a.cta__link + a.cta__link {
+  display: none !important;
+}
+
+/* Tighter product boxes. */
+.pd21-product-card__item {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.pd21-product-card__image {
+  height: 100px !important;
+}
+
+.pd21-product-card__price,
+.pd21-product-card__options,
+.pd21-product-card__title-wrap,
+.pd21-product-card__rating-wrap {
+  margin-bottom: 4px !important;
+}
+
+/* Keep product images inside their box, above the title. */
+.pd21-product-card__image .image__main,
+.pd21-product-card__image .image__preview {
+  height: 100px !important;
+  max-height: 100px !important;
+  top: 0 !important;
+  width: auto !important;
+  max-width: 100% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  object-fit: contain !important;
+}
+
+.pd21-product-card__title-wrap {
+  margin-top: 6px !important;
+}
+
+/* Hide the chat widget. */
+#ae_app {
+  display: none !important;
+}
+
+/* Pull the Buy button up under the price. */
+.pd21-product-card__price {
+  margin-bottom: 0 !important;
+}
+
+.pd21-product-card__cta-wrap {
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+/* More space between the product image and its title. */
+.pd21-product-card__title-wrap {
+  margin-top: 10px !important;
+}
+
+/* Large red label in the top-right corner showing which version this is. */
+body::after {
+  content: "VERSION C";
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 9999;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: #e00000;
+  color: #fff;
+  font: 700 22px/1 sans-serif;
+  letter-spacing: 1px;
+  pointer-events: none;
+}

@@ -1,0 +1,110 @@
+/* Above-the-fold overrides for the All Smartphones page.
+   Loaded after the page's own stylesheets. */
+
+/* Remove the category carousel (Tab, Book, Watch...). The user already chose smartphones. */
+.nv19-pd-category-main {
+  display: none !important;
+}
+
+/* Tighten the H1 block. */
+.co77-text-block-home--padding-pf {
+  padding-top: 16px !important;
+  padding-bottom: 0 !important;
+}
+
+.co77-text-block-home__headline {
+  font-size: 32px !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Tighten the product finder header, filter row and card list. */
+.pd21-top__header,
+.pd21-filter__selector-list {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.pd21-product-card__list {
+  padding-top: 8px !important;
+}
+
+/* Hide the filter row (Mobile series, Storage, Price...) so the cards move up. */
+.pd21-filter {
+  display: none !important;
+}
+
+/* Hide the "Check Eligibility for Exclusive Offers" row above the cards. */
+.pd21-top__epp-benefit {
+  display: none !important;
+}
+
+/* Hide the promo bar container. */
+.pd-g-product-promotion-bar,
+#gnb-promo-wrapper-da-blue {
+  display: none !important;
+}
+
+/* Remove the "Learn more" link from each card. */
+.pd21-product-card__cta-container a.cta__link + a.cta__link {
+  display: none !important;
+}
+
+/* Tighter product boxes. */
+.pd21-product-card__item {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.pd21-product-card__image {
+  height: 100px !important;
+}
+
+.pd21-product-card__price,
+.pd21-product-card__options,
+.pd21-product-card__title-wrap,
+.pd21-product-card__rating-wrap {
+  margin-bottom: 4px !important;
+}
+
+/* Keep product images inside their box, above the title. */
+.pd21-product-card__image .image__main,
+.pd21-product-card__image .image__preview {
+  height: 100px !important;
+  max-height: 100px !important;
+  top: 0 !important;
+  width: auto !important;
+  max-width: 100% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  object-fit: contain !important;
+}
+
+.pd21-product-card__title-wrap {
+  margin-top: 6px !important;
+}
+
+/* Hide the chat widget. */
+#ae_app {
+  display: none !important;
+}
+
+/* Pull the Buy button up under the price. */
+.pd21-product-card__price {
+  margin-bottom: 0 !important;
+}
+
+.pd21-product-card__cta-wrap {
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+/* More space between the product image and its title. */
+.pd21-product-card__title-wrap {
+  margin-top: 10px !important;
+}
