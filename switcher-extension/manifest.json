@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Samsung Smartphones Layout Switcher",
+  "version": "1.0.0",
+  "description": "Switch the All Smartphones page between layout versions A, B and C.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://www.samsung.com/us/smartphones/*"],
+  "action": {
+    "default_title": "Layout version",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.samsung.com/us/smartphones/all-smartphones/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["versions/*.css"],
+      "matches": ["https://www.samsung.com/*"]
+    }
+  ]
+}

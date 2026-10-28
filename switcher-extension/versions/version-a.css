@@ -1,0 +1,148 @@
+/* Version A: slim header, compact text filter pills, narrower and shorter cards. */
+
+/* Hide carousel, promo bars and the eligibility row. */
+.nv19-pd-category-main,
+.pd-g-product-promotion-bar,
+#gnb-promo-wrapper-da-blue,
+.pd21-top__epp-benefit {
+  display: none !important;
+}
+
+/* Slim H1 block. */
+.co77-text-block-home--padding-pf {
+  padding-top: 12px !important;
+  padding-bottom: 0 !important;
+}
+
+.co77-text-block-home__headline {
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Compact filter header and pills. */
+.pd21-top__header,
+.pd21-filter__selector-list {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+.pd21-filter__selector-item-cta {
+  height: 32px !important;
+  padding: 0 10px !important;
+  font-size: 13px !important;
+}
+
+.pd21-filter__selector-list {
+  gap: 6px !important;
+}
+
+/* Narrower card grid. */
+.pd21-product-card__list {
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+  padding-top: 6px !important;
+}
+
+/* Shorter cards. */
+.pd21-product-card__image {
+  height: 120px !important;
+}
+
+.pd21-product-card__title-wrap,
+.pd21-product-card__rating-wrap,
+.pd21-product-card__options,
+.pd21-product-card__price,
+.pd21-product-card__cta-wrap {
+  margin-bottom: 6px !important;
+}
+
+/* Remove the "Learn more" link from each card. */
+.pd21-product-card__cta-container a.cta__link + a.cta__link {
+  display: none !important;
+}
+
+/* Tighter product boxes. */
+.pd21-product-card__item {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.pd21-product-card__image {
+  height: 100px !important;
+}
+
+.pd21-product-card__price,
+.pd21-product-card__options,
+.pd21-product-card__title-wrap,
+.pd21-product-card__rating-wrap {
+  margin-bottom: 4px !important;
+}
+
+/* Keep product images inside their box, above the title. */
+.pd21-product-card__image .image__main,
+.pd21-product-card__image .image__preview {
+  height: 100px !important;
+  max-height: 100px !important;
+  top: 0 !important;
+  width: auto !important;
+  max-width: 100% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  object-fit: contain !important;
+}
+
+.pd21-product-card__title-wrap {
+  margin-top: 6px !important;
+}
+
+/* Hide the chat widget. */
+#ae_app {
+  display: none !important;
+}
+
+/* Pull the Buy button up under the price. */
+.pd21-product-card__price {
+  margin-bottom: 0 !important;
+}
+
+.pd21-product-card__cta-wrap {
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+/* More space between the product image and its title. */
+.pd21-product-card__title-wrap {
+  margin-top: 10px !important;
+}
+
+/* Large red label in the top-right corner showing which version this is. */
+body::after {
+  content: "VERSION A";
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 9999;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background: #e00000;
+  color: #fff;
+  font: 700 22px/1 sans-serif;
+  letter-spacing: 1px;
+  pointer-events: none;
+}
+
+/* Hide the live chat widget (current container). */
+#spr-live-chat-app {
+  display: none !important;
+}
+
+/* Let the card grid use the full page width (removes the side gutters). */
+.pd21-product-card__list {
+  max-width: none !important;
+}

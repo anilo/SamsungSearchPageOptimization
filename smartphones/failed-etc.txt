@@ -1,0 +1,1 @@
+samsung/clientlibs/consumer/global/clientlib-common/resources/images/style-guide-icon-close-bold-white-hover-disabled.svg

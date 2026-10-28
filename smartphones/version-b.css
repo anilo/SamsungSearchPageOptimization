@@ -201,3 +201,13 @@ body::after {
   letter-spacing: 1px;
   pointer-events: none;
 }
+
+/* Hide the live chat widget (current container). */
+#spr-live-chat-app {
+  display: none !important;
+}
+
+/* Let the card grid use the full page width (removes the side gutters). */
+.pd21-product-card__list {
+  max-width: none !important;
+}
